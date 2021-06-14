@@ -7,10 +7,10 @@ body {
     margin: 0;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
+    background-color: rgb(255, 250, 253);
 }
 
 #heroView {
-    background: linear-gradient(150deg, pink 67%, #fff 72%);
     min-height: 100vh;
 }
 
@@ -94,8 +94,10 @@ body {
 }
 .heroTitle p {
     font-size: 25px;
+    letter-spacing: 1px;
     margin: 0;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    font-family: 'Sorts Mill Goudy', serif;
 }
 
 .heroSocialsContainer {
@@ -103,11 +105,9 @@ body {
 }
 .heroSocials {
     display: flex;
-    /* justify-content: flex-end; */
 }
 .heroFb,
-.heroInsta,
-.heroPhone {
+.heroInsta {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,21 +119,41 @@ body {
     height: 50px;
     margin: 5px;
 }
-.heroPhone {
-    position: absolute;
-    bottom: 70px;
-    right: 20px;
-    width: 35px;
-    height: 35px;
+
+.sectionsContainer {
+    padding: 20px 21px 0 21px;
 }
-.icon-phone {
-    font-size: 30px;
-    color: red;
-    transform: rotate(100deg);
+h2 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 1.7rem;
+    letter-spacing: 1.5px;
+    margin-top: 50px;
+    text-align: center;
 }
-
-
-
+p {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.aboutUs-p  {
+    margin: 0 0 50px 0;
+}
+.aboutUs,
+.aboutPerson {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.aboutUs {
+    margin-top: 50px;
+}
+.aboutPerson img {
+    width: 100%
+}
+.aboutPerson h2 {
+    font-weight: 400;
+}
 
 
 
