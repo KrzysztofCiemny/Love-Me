@@ -2,5 +2,7 @@
 .icon-heart-empty:before { content: '\e800'; } /* '' */
 .icon-heart:before { content: '\e801'; } /* '' */
 .icon-phone:before { content: '\e802'; } /* '' */
+.icon-down-open-big:before { content: '\e803'; } /* '' */
+.icon-down-open-mini:before { content: '\e804'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
