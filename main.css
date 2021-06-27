@@ -5,15 +5,36 @@
 body {
     padding: 0;
     margin: 0;
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
+    /* font-size: 20px;
+    /* font: 400 20px 'Lato', sans-serif; */
+    font: 400 20px 'Open Sans', sans-serif;
     background-color: rgb(255, 250, 253);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 1.7rem;
+    letter-spacing: 1.5px;
+    margin-top: 50px;
+    text-align: center;
+}
+p {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+}
+a {
+    text-decoration: none;
 }
 
 #heroView {
     min-height: 100vh;
 }
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -124,7 +145,6 @@ body {
     transform: translateY(0);
 }
 .nav_list a {
-    text-decoration: none;
     color: rgb(255, 250, 253);
 }
 
@@ -147,13 +167,10 @@ body {
     margin: 0;
 }
 .heroTitle p {
-    font-size: 25px;
+    font: 25px 'Sorts Mill Goudy', serif;
     letter-spacing: 1px;
-    margin: 0;
     padding-bottom: 10px;
-    font-family: 'Sorts Mill Goudy', serif;
 }
-
 .heroSocialsContainer {
     margin-top: 15vh;
 }
@@ -174,21 +191,8 @@ body {
     margin: 5px;
 }
 
-.sectionsContainer {
+.AboutUs-Container {
     padding: 20px 21px 0 21px;
-}
-h2 {
-    font-family: 'Sorts Mill Goudy', serif;
-    font-size: 1.7rem;
-    letter-spacing: 1.5px;
-    margin-top: 50px;
-    text-align: center;
-}
-p {
-    text-align: justify;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin: 0;
 }
 .aboutUs-p  {
     margin: 0 0 50px 0;
@@ -213,56 +217,188 @@ p {
 /* services ----- */
 
 .servicesContainer {
-
+    padding: 20px 21px 0 21px;
 }
 .servicesContainer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     line-height: 2;
 }
 .servicesContainer h4 {
+    font-weight: 700;
     margin: 0;
 }
 .titleServices {
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
-    padding: 0 5px 0 5px;
-    background-color: aqua;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 0 10px 0 15px;
+    background-color: pink;
 }
 .icon-down-open-mini {
     display: inline-block;
     color: red;
     font-size: 30px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform .2s .1s ease-in-out;
 }
 .icon-rotate {
     color: yellow;
     transform: rotate(180deg);
 }
 .services {
-    background-color: rgb(185, 170, 151);
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+    background-color: rgb(255, 250, 253);
     margin: 0 10px 0 10px;
-    padding: 0 5px 0 5px;
+    padding: 0 15px 0 15px;
     max-height: 0px;
-    transition: all .3s .1s ease;
+    transition: all .2s .1s ease;
     overflow: hidden;
 }
 .services-active {
-    max-height: 300px;
+    max-height: 1000px;
 }
 .eachService {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid gray;
 }
 .eachService span {
+    width: 70%;
     display: flex;
-    justify-content: space-between;
-    width: 50%;
+    flex-direction: column;
+    padding: 6px 0 6px 0;
 }
+.eachService-p {
+    text-align: left;
+    line-height: 1.1;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.eachService-p small {
+    font-size: 0.85rem;
+    font-weight: 400;
+    padding-left: 10px;
+    color: gray;
+}
+.serviceTime p{
+    text-align: center;
+    font-size: 0.85rem;
+    margin: 10px 0 10px 0;
+    color: gray;
+}
+
+/* contact */
+
+.contactContainer {
+    background-color: #1a1a1a;
+    color: white;
+    width: 100vw;
+    padding: 0 25px 15px 25px;
+    margin-top: 70px;
+}
+.contactContainer h2 {
+    padding: 50px 0 0 0;
+}
+.address h4 {
+    margin: 35px 0 5px 0;
+    font-size: 1rem;
+}
+.address p {
+    font-size: 1.1rem;
+}
+.telAndSocials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+.telAndSocials ul {
+    margin-top: 15px;
+    align-self: flex-start;
+}
+.telLink,
+.socialLink {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.telLink {
+    margin: 25px 0 25px 0;
+}
+.telLink a {
+    min-width: 175px;
+}
+.socialLink a {
+    min-width: 150px;
+}
+.telLink a,
+.socialLink a {
+    padding: 7px 0 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0, 1);
+}
+.socialName {
+    font-weight: 600;
+}
+.telLink p {
+    font-size: 1.1rem;
+}
+.socialLink p {
+    font-size: 1rem;
+}
+.telLink span,
+.socialLink span {
+    color: gray;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0, 1);
+}
+.icon-direction {
+    font-size: 0.7rem;
+    align-self: flex-start;
+}
+.telLink::before,
+.socialLink::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: translateY(-101%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0, 1);
+    z-index: -1;
+}
+.telLink:hover::before,
+.telLink:focus::before,
+.socialLink:hover::before,
+.socialLink:focus::before {
+    transform: translateY(0);
+}
+.telLink a:hover,
+.telLink a:focus,
+.socialLink a:hover,
+.socialLink a:focus,
+.socialLink a:hover span,
+.socialLink a:focus span,
+.telLink a:hover span,
+.telLink a:focus span {
+    color: #000;
+}
+.telLink a:hover,
+.telLink a:focus,
+.socialLink a:hover,
+.socialLink a:focus {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
 
 
 
