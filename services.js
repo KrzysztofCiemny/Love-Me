@@ -1,9 +1,17 @@
-const services = document.querySelector('.services');
-const arrowIcon = document.querySelector('.icon-down-open-mini');
+const services = document.querySelectorAll('.services');
+const arrowIcons = document.querySelectorAll('.icon-down-open-mini');
+console.log(arrowIcons);
 
 const dropDownServices = () => {
-    services.classList.toggle('services-active');
-    arrowIcon.classList.toggle('icon-rotate');
+
+    arrowIcons.forEach(icon => {
+        icon.addEventListener('click', dropDown);
+    });
+
+    // console.log(icon);
+    function dropDown() {
+        services[1].classList.toggle('services-active');
+    }
 }
 
 export default dropDownServices;

@@ -148,48 +148,28 @@ a {
     color: rgb(255, 250, 253);
 }
 
-/* ------ */
+/* hero image */
 
 .hero {
     margin-top: 20vh;
-}
-.heroTitle,
-.heroSocialsContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.heroTitle h1 {
+.hero h1 {
     color: red;
     font: 100px 'Dancing Script', cursive;
     z-index: 1;
     margin: 0;
 }
-.heroTitle p {
+.hero-p {
     font: 25px 'Sorts Mill Goudy', serif;
     letter-spacing: 1px;
     padding-bottom: 10px;
 }
-.heroSocialsContainer {
-    margin-top: 15vh;
-}
-.heroSocials {
-    display: flex;
-}
-.heroFb,
-.heroInsta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-}
-.heroFb,
-.heroInsta {
-    width: 40px;
-    height: 50px;
-    margin: 5px;
-}
+
+/* about us  */
 
 .AboutUs-Container {
     padding: 20px 21px 0 21px;
@@ -375,27 +355,56 @@ a {
     z-index: -1;
 }
 .telLink:hover::before,
-.telLink:focus::before,
-.socialLink:hover::before,
-.socialLink:focus::before {
+.socialLink:hover::before {
     transform: translateY(0);
 }
 .telLink a:hover,
-.telLink a:focus,
 .socialLink a:hover,
-.socialLink a:focus,
 .socialLink a:hover span,
-.socialLink a:focus span,
-.telLink a:hover span,
-.telLink a:focus span {
+.telLink a:hover span {
     color: #000;
 }
 .telLink a:hover,
-.telLink a:focus,
-.socialLink a:hover,
-.socialLink a:focus {
+.socialLink a:hover {
     padding-left: 5px;
     padding-right: 5px;
+}
+
+/* footer */
+
+.footer {
+    width: 100vw;
+    height: 50vh;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer h1 {
+    color: red;
+    font: 2.1rem 'Dancing Script', cursive;
+    margin: 0;
+    padding-top: 20px;
+}
+.scrollUp,
+.footSocials a {
+    color: #fff;
+}
+.footSocials {
+    padding-bottom: 40px;
+}
+.scrollUp i {
+    font-size: 1.7rem;
+}
+.footer p {
+    font-size: .75rem;
+    color: lightgray;
+}
+.footer p small {
+    font-size: .55rem;
 }
 
 

@@ -47,6 +47,18 @@
       "css": "down-open-mini",
       "code": 59396,
       "src": "entypo"
+    },
+    {
+      "uid": "921e3974e54ff9e8b7cd906a3dc74636",
+      "css": "direction",
+      "code": 61732,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0805cca616b3c12714f35af4d0912c10",
+      "css": "up-open-big",
+      "code": 59398,
+      "src": "entypo"
     }
   ]
 }
