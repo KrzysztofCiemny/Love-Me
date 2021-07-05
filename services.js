@@ -1,6 +1,7 @@
 const services = document.querySelectorAll('.services');
 const arrowIcons = document.querySelectorAll('.icon-down-open-mini');
-console.log(arrowIcons);
+
+console.log(services);
 
 const dropDownServices = () => {
 

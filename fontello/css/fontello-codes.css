@@ -4,7 +4,9 @@
 .icon-phone:before { content: '\e802'; } /* '' */
 .icon-down-open-big:before { content: '\e803'; } /* '' */
 .icon-down-open-mini:before { content: '\e804'; } /* '' */
+.icon-right-open:before { content: '\e805'; } /* '' */
 .icon-up-open-big:before { content: '\e806'; } /* '' */
+.icon-left-open:before { content: '\e807'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-direction:before { content: '\f124'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
