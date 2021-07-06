@@ -12,5 +12,6 @@ hamburger.addEventListener('click', hamburgerNavClick);
 // });
 dropDownServices();
 slider();
+
 const scrollToTopBtn = document.querySelector('.scrollUp');
 scrollToTopBtn.addEventListener('click', scrollToTop);
