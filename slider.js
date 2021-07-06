@@ -7,7 +7,7 @@ const nextBtn = document.querySelector('#nextBtn');
 let imageCounter = 1;
 const imageWidth = slidesImages[0].getBoundingClientRect().width;
 
-let autoSlideTimer = setInterval(autoSlide, 5000);
+let autoSlideTimer = setInterval(autoSlide, 6000);
 
 function slider() {
     slides.style.transform = 'translateX(' +(-imageWidth * imageCounter) + 'px)';
@@ -19,13 +19,13 @@ function slider() {
 
 function autoSlide() {
     if(imageCounter >= slidesImages.length -1) return;
-    slides.style.transition = "transform 0.4s ease-in-out";
+    slides.style.transition = "transform 0.5s ease-in-out";
     imageCounter++;
     slides.style.transform = 'translateX(' +(-imageWidth * imageCounter) + 'px)';
 }
 function resetAutoSlideTimer() {
     clearInterval(autoSlideTimer);
-    autoSlideTimer = setInterval(autoSlide, 5000);
+    autoSlideTimer = setInterval(autoSlide, 6000);
 }
 
 function jumpToFirstImage() {
@@ -43,14 +43,14 @@ function jumpToFirstImage() {
 function goToNextSlide() {
     resetAutoSlideTimer()
     if(imageCounter >= slidesImages.length -1) return;
-    slides.style.transition = "transform 0.4s ease-in-out";
+    slides.style.transition = "transform 0.5s ease-in-out";
     imageCounter++;
     slides.style.transform = 'translateX(' +(-imageWidth * imageCounter) + 'px)';
 }
 function goToPrevSlide() {
     resetAutoSlideTimer()
     if(imageCounter <= 0) return;
-    slides.style.transition = "transform 0.4s ease-in-out";
+    slides.style.transition = "transform 0.5s ease-in-out";
     imageCounter--;
     slides.style.transform = 'translateX(' +(-imageWidth * imageCounter) + 'px)';
 }
