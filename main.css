@@ -199,7 +199,7 @@ a {
 
 /* image slider  */
 .slider-container {
-    margin: 50px 0 30px 0;
+    margin: 50px 0 0 0;
     width: 100vw;
     overflow: hidden;
     position: relative;
