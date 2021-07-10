@@ -1,3 +1,5 @@
+import {hamburger, nav} from "./hamburgerClick.js";
+
 const navLinks = document.querySelectorAll('.nav_item');
 const elements = document.querySelectorAll('.scroll-to-element');
 const scrollToTopBtn = document.querySelector('.scrollUp');
@@ -16,6 +18,8 @@ function scrollTo() {
                 element.scrollIntoView({
                     behavior: "smooth"
                 });
+                hamburger.classList.toggle('hamburger-active');
+                nav.classList.toggle('navigation-active');
             }
         });
     }

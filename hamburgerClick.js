@@ -1,5 +1,5 @@
-const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.navigation');
+export const hamburger = document.querySelector('.hamburger');
+export const nav = document.querySelector('.navigation');
 
 const hamburgerNavClick = () => {
     hamburger.classList.toggle('hamburger-active');
