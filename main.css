@@ -194,6 +194,7 @@ a {
 
 .AboutUs-Container {
     padding: 20px 21px 0 21px;
+    background-color: rgb(255, 250, 253);
 }
 .aboutUs-p  {
     margin: 0 0 50px 0;
@@ -202,22 +203,24 @@ a {
 .aboutPerson {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
-/* .aboutUs {
-    margin-top: 50px;
-} */
 .aboutPerson img {
-    width: 100%
+    width: 100%;
+    margin-bottom: 25px;
+}
+.aboutPerson p {
+    margin-bottom: 40px;
 }
 .aboutPerson h2 {
     font-weight: 400;
+    margin-top: 30px;
 }
 
 /* image slider  */
+
 .slider-container {
-    margin: 50px 0 0 0;
+    margin: 70px 0 70px 0;
     width: 100vw;
     overflow: hidden;
     position: relative;
@@ -251,10 +254,13 @@ a {
 /* services ----- */
 
 .servicesContainer {
-    padding: 20px 21px 0 21px;
+    padding: 20px 21px 20px 21px;
+    background-color: rgb(255, 250, 253);
+    min-height: 400px;
 }
 .servicesContainer ul {
     line-height: 2;
+    margin-top: 55px;
 }
 .servicesContainer h4 {
     font-weight: 700;
@@ -264,18 +270,16 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgray;
     padding: 0 10px 0 15px;
-    background-color: pink;
 }
 .icon-down-open-mini {
     display: inline-block;
-    color: red;
+    color: #17181c;
     font-size: 30px;
-    transition: transform .2s .1s ease-in-out;
+    transition: transform .4s .1s ease-in-out;
 }
 .icon-rotate {
-    color: yellow;
     transform: rotate(180deg);
 }
 .services {
@@ -283,18 +287,21 @@ a {
     margin: 0 10px 0 10px;
     padding: 0 15px 0 15px;
     max-height: 0px;
-    transition: all .2s .1s ease;
+    transition: all .4s .1s ease;
     overflow: hidden;
 }
 .services-active {
     max-height: 1000px;
+}
+.services ul {
+    margin: 0;
 }
 .eachService {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0 10px 0;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgray;
 }
 .eachService span {
     width: 70%;
@@ -324,14 +331,14 @@ a {
 /* contact */
 
 .contactContainer {
-    background-color: #1a1a1a;
     color: white;
     width: 100vw;
-    padding: 0 25px 15px 25px;
+    padding: 0px 25px 55px 25px;
     margin-top: 70px;
+    background-color: #17181c;
 }
 .contactContainer h2 {
-    padding: 50px 0 0 0;
+    padding: 50px 0 30px 0;
 }
 .address h4 {
     margin: 35px 0 5px 0;
@@ -348,7 +355,7 @@ a {
 }
 .telAndSocials ul {
     margin-top: 15px;
-    align-self: flex-start;
+    /* align-self: flex-start; */
 }
 .telLink,
 .socialLink {
@@ -428,24 +435,24 @@ a {
 
 .footer {
     width: 100vw;
-    height: 50vh;
-    background-color: #1a1a1a;
+    height: 60vh;
     color: #fff;
-    border-top: 1px solid #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-color: #17181c;
 }
 .footer h1 {
     color: red;
     font: 2.1rem 'Dancing Script', cursive;
     margin: 0;
-    padding-top: 20px;
 }
 .scrollUp,
 .footSocials a {
     color: #fff;
+    margin: 0 5px 0 5px;
+
 }
 .footSocials {
     padding-bottom: 40px;

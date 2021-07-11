@@ -10,6 +10,7 @@ const dropDownServices = () => {
         services.forEach(service => {
             if(service.dataset.collapse === iconClicked.dataset.index) {
                 service.classList.toggle('services-active');
+                iconClicked.classList.toggle('icon-rotate');
             }
         });
     }

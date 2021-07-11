@@ -18,11 +18,7 @@
     <section>
         <div id="heroView">
             <header class="header">
-                <!-- <span class="logoContainer"> -->
-                    <!-- <i class="icon-heart-empty"></i> -->
-                    <h1>Love Me</h1>
-                <!-- </span> -->
-
+                <h1>Love Me</h1>
                 <button class="hamburger">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
@@ -32,8 +28,8 @@
                     <ul>
                         <div class="nav_list">
                             <li class="nav_item"><a data-nav-index="1">O nas</a></li>
-                            <li class="nav_item"><a data-nav-index="2">Oferta</a></li>
-                            <li class="nav_item"><a data-nav-index="3">Galeria</a></li>
+                            <li class="nav_item"><a data-nav-index="2">Galeria</a></li>
+                            <li class="nav_item"><a data-nav-index="3">Oferta</a></li>
                             <li class="nav_item"><a data-nav-index="4">Kontakt</a></li>
                         </div>
                         <li class="nav_item nav_socials">
@@ -77,7 +73,21 @@
         </div>
     </section>
     <section>
-        <div class="servicesContainer scroll-to-element" data-scroll-to="2">
+        <div class="slider-container scroll-to-element" data-scroll-to="2">
+            <i class="icon-left-open" id="prevBtn"></i>
+            <i class="icon-right-open" id="nextBtn"></i>
+            <div class="slides">
+                <img src="images/dog4.jpg" id="lastClone">
+                <img src="images/dog1.jpg">
+                <img src="images/dog2.jpg">
+                <img src="images/dog3.jpg">
+                <img src="images/dog4.jpg">
+                <img src="images/dog1.jpg" id="firstClone">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="servicesContainer scroll-to-element" data-scroll-to="3">
             <header>
                 <h2>Oferta</h2>
             </header>
@@ -252,83 +262,71 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="slider-container scroll-to-element" data-scroll-to="3">
-            <i class="icon-left-open" id="prevBtn"></i>
-            <i class="icon-right-open" id="nextBtn"></i>
-            <div class="slides">
-                <img src="images/dog4.jpg" id="lastClone">
-                <img src="images/dog1.jpg">
-                <img src="images/dog2.jpg">
-                <img src="images/dog3.jpg">
-                <img src="images/dog4.jpg">
-                <img src="images/dog1.jpg" id="firstClone">
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="contactContainer scroll-to-element" data-scroll-to="4">
-            <header>
-                <h2>Kontakt</h2>
-            </header>
-            <section>
-                <div class="contact">
-                    <div class="address">
-                        <h4>Adres: </h4>
-                        <p>ul. Konieczna 57/4, <br> 220-30 Żywiec </p>
-                        <h4>Godziny Otwarcia: </h4>
-                        <p>pon - pt: 08:00 - 20:00 <br> sob: 10:00 - 15:00 </p>
-                    </div>
-                    <div class="telAndSocials">
-                        <div class="telLink">
-                            <a href="tel:507875239">
-                                <p class="socialName">507 875 239</p>
-                                <span>
-                                    <p>Łącz</p>
-                                    <i class="icon-direction"></i>
-                                </span>
-                            </a>
+    <!-- <div class="contact-and-footer-color"> -->
+        <section>
+            <div class="contactContainer scroll-to-element" data-scroll-to="4">
+                <header>
+                    <h2>Kontakt</h2>
+                </header>
+                <section>
+                    <div class="contact">
+                        <div class="address">
+                            <h4>Adres: </h4>
+                            <p>ul. Konieczna 57/4, <br> 220-30 Żywiec </p>
+                            <h4>Godziny Otwarcia: </h4>
+                            <p>pon - pt: 08:00 - 20:00 <br> sob: 10:00 - 15:00 </p>
                         </div>
-                        <ul>
-                            <li>
-                                <div class="socialLink">
-                                    <a href="#" alt=Instagram">
-                                        <p class="socialName">Instagram</p>
-                                        <span>
-                                            <p>Link</p>
-                                            <i class="icon-direction"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="socialLink">
-                                    <a href="#" alt=facebook">
-                                        <p class="socialName">Facebook</p>
-                                        <span>
-                                            <p>Link</p>
-                                            <i class="icon-direction"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="telAndSocials">
+                            <div class="telLink">
+                                <a href="tel:507875239">
+                                    <p class="socialName">507 875 239</p>
+                                    <span>
+                                        <p>Łącz</p>
+                                        <i class="icon-direction"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="socialLink">
+                                        <a href="#" alt=Instagram">
+                                            <p class="socialName">Instagram</p>
+                                            <span>
+                                                <p>Link</p>
+                                                <i class="icon-direction"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="socialLink">
+                                        <a href="#" alt=facebook">
+                                            <p class="socialName">Facebook</p>
+                                            <span>
+                                                <p>Link</p>
+                                                <i class="icon-direction"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </div>
-    </section>
-    <footer>
-        <div class="footer">
-            <a class="scrollUp" alt="scrollUp"><i class="icon-up-open-big"></i></a>
-            <h1>Love Me</h1>
-            <div class="footSocials">
-                <a href="#"><i class="icon-facebook"></i></a>
-                <a href="#"><i class="icon-instagram"></i></a>
+                </section>
             </div>
-            <p>&copy; <small>2021</small> loveMe.pl. All rights reserved </p>
-        </div>
-    </footer>
+        </section>
+        <footer>
+            <div class="footer">
+                <a class="scrollUp" alt="scrollUp"><i class="icon-up-open-big"></i></a>
+                <h1>Love Me</h1>
+                <div class="footSocials">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-instagram"></i></a>
+                </div>
+                <p>&copy; <small>2021</small> loveMe.pl. All rights reserved </p>
+            </div>
+        </footer>
+    <!-- </div> -->
 
     <script type="module" src="main.js"></script>
 </body>
