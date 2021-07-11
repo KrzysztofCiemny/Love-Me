@@ -4,9 +4,6 @@ const navLinks = document.querySelectorAll('.nav_item');
 const elements = document.querySelectorAll('.scroll-to-element');
 const scrollToTopBtn = document.querySelector('.scrollUp');
 
-console.log(elements);
-
-
 function scrollTo() {
     navLinks.forEach(navLink => navLink.addEventListener('click', scrollToElement));
 
