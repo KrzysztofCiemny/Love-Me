@@ -1,0 +1,74 @@
+.servicesContainer {
+    padding: 20px 21px 20px 21px;
+    background-color: rgb(255, 250, 253);
+    min-height: 400px;
+}
+.servicesContainer ul {
+    line-height: 2;
+    margin-top: 55px;
+}
+.servicesContainer h4 {
+    font-weight: 700;
+    margin: 0;
+}
+.titleServices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 0 10px 0 15px;
+}
+.icon-down-open-mini {
+    display: inline-block;
+    color: #17181c;
+    font-size: 30px;
+    transition: transform .4s .1s ease-in-out;
+}
+.icon-rotate {
+    transform: rotate(180deg);
+}
+.services {
+    background-color: rgb(255, 250, 253);
+    margin: 0 10px 0 10px;
+    padding: 0 15px 0 15px;
+    max-height: 0px;
+    transition: all .4s .1s ease;
+    overflow: hidden;
+}
+.services-active {
+    max-height: 1000px;
+}
+.services ul {
+    margin: 0;
+}
+.eachService {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+.eachService span {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 0 6px 0;
+}
+.eachService-p {
+    text-align: left;
+    line-height: 1.1;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.eachService-p small {
+    font-size: 0.85rem;
+    font-weight: 400;
+    padding-left: 10px;
+    color: gray;
+}
+.serviceTime p{
+    text-align: center;
+    font-size: 0.85rem;
+    margin: 10px 0 10px 0;
+    color: gray;
+}

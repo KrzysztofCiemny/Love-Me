@@ -1,0 +1,35 @@
+#heroView {
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 {
+    color: red;
+    font: 25px 'Dancing Script', cursive;
+    display: inline-block;
+    margin-left: 25px;
+}
+.hero {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    color: red;
+    font: 100px 'Dancing Script', cursive;
+    z-index: 1;
+    margin: 0;
+}
+.hero-p {
+    font: 25px 'Sorts Mill Goudy', serif;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+.hero i {
+    margin-top: 15vh;
+}
