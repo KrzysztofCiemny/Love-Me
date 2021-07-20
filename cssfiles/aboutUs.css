@@ -12,11 +12,12 @@
     align-items: center;
 }
 .aboutPerson img {
-    width: 100%;
+    width: 90%;
     margin-bottom: 25px;
 }
 .aboutPerson p {
     margin-bottom: 40px;
+    width: 90%;
 }
 .aboutPerson h2 {
     font-weight: 400;
@@ -26,5 +27,17 @@
 @media (min-width: 576px) {
     .AboutUs-Container {
         padding: 20px 27px 0 27px;
+    }
+}
+@media (min-width: 768px) {
+    .person-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .aboutPerson img {
+        height: 390px;
+    }
+    .person-to-bottom {
+        padding-top: 35px;
     }
 }

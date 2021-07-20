@@ -60,12 +60,6 @@
     font-size: 0.95rem;
     font-weight: 600;
 }
-/* .eachService-p small {
-    font-size: 0.85rem;
-    font-weight: 400;
-    padding-left: 10px;
-    color: gray;
-} */
 .serviceTime p{
     text-align: center;
     font-size: 0.85rem;
@@ -76,6 +70,14 @@
 @media (min-width: 576px) {
     .servicesContainer h4 {
         font-size: 17px;
+    }
+    .titleServices {
+        padding: 0 14px 0 19px;
+    }
+}
+@media (min-width: 768px) {
+    .servicesContainer h4 {
+        font-size: 18px;
     }
     .titleServices {
         padding: 0 14px 0 19px;
