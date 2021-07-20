@@ -29,3 +29,12 @@
 #nextBtn {
     right: 5%;
 }
+
+@media (min-width: 576px) {
+    .slider-container {
+        margin: 85px 0 85px 0;
+    }
+    .slides {
+        height: 350px;
+    }
+}

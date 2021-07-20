@@ -32,3 +32,15 @@
 .footer p small {
     font-size: .55rem;
 }
+
+@media (min-width: 576px) {
+    .footer h1 {
+        font: 2.3rem 'Dancing Script', cursive;
+    }
+    .footSocials {
+        font-size: 1.1rem;
+    }
+    .footer p small {
+        font-size: .6rem;
+    }
+}
