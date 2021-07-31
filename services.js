@@ -1,5 +1,6 @@
 const services = document.querySelectorAll('.services');
 const serviceLinks = document.querySelectorAll('.servicesDropDown');
+const icons = document.querySelectorAll('.icon-down-open-mini');
 
 const dropDownServices = () => {
     serviceLinks.forEach(link => link.addEventListener('click', dropDown));
@@ -10,7 +11,11 @@ const dropDownServices = () => {
         services.forEach(service => {
             if(service.dataset.collapse === linkClicked.dataset.index) {
                 service.classList.toggle('services-active');
-                // linkClicked.classList.toggle('icon-rotate');
+            }
+        });
+        icons.forEach(icon => {
+            if(icon.dataset.rotate === linkClicked.dataset.index) {
+                icon.classList.toggle('icon-rotate');
             }
         });
     }
