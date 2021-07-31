@@ -1,6 +1,6 @@
 .footer {
     width: 100vw;
-    height: 60vh;
+    height: 55vh;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -20,6 +20,24 @@
 }
 .footSocials {
     padding-bottom: 40px;
+}
+.scrollUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    animation:infinite arrowMove 2s ease-in-out;
+}
+@keyframes arrowMove {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(8px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 .scrollUp i {
     font-size: 1.7rem;

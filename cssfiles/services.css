@@ -1,7 +1,11 @@
 .servicesContainer {
-    padding: 20px 21px 20px 21px;
-    background-color: rgb(255, 250, 253);
+    padding: 50px 21px 70px 21px;
+    color: rgb(255, 250, 253);
+    background: #17181c;
     min-height: 400px;
+}
+.servicesContainer h2 {
+    margin-bottom: 0;
 }
 .servicesContainer ul {
     line-height: 2;
@@ -12,15 +16,21 @@
     margin: 0;
 }
 .titleServices {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     border-bottom: 1px solid lightgray;
     padding: 0 10px 0 15px;
 }
+.servicesDropDown {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .icon-down-open-mini {
     display: inline-block;
-    color: #17181c;
+    color: rgb(255, 250, 253);
     font-size: 30px;
     transition: transform .4s .1s ease-in-out;
 }
@@ -28,7 +38,7 @@
     transform: rotate(180deg);
 }
 .services {
-    background-color: rgb(255, 250, 253);
+    background-color: #17181c;
     margin: 0 10px 0 10px;
     padding: 0 15px 0 15px;
     max-height: 0px;
@@ -81,5 +91,16 @@
     }
     .titleServices {
         padding: 0 14px 0 19px;
+    }
+}
+@media (min-width: 992px) {
+    .servicesContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+    }
+    .servicesWidth {
+        width: 70%;
     }
 }

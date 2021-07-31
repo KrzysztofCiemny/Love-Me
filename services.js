@@ -1,16 +1,16 @@
 const services = document.querySelectorAll('.services');
-const arrowIcons = document.querySelectorAll('.icon-down-open-mini');
+const serviceLinks = document.querySelectorAll('.servicesDropDown');
 
 const dropDownServices = () => {
-    arrowIcons.forEach(icon => icon.addEventListener('click', dropDown));
+    serviceLinks.forEach(link => link.addEventListener('click', dropDown));
 
     function dropDown(e) {
-        const iconClicked = e.target;
+        const linkClicked = e.target;
 
         services.forEach(service => {
-            if(service.dataset.collapse === iconClicked.dataset.index) {
+            if(service.dataset.collapse === linkClicked.dataset.index) {
                 service.classList.toggle('services-active');
-                iconClicked.classList.toggle('icon-rotate');
+                // linkClicked.classList.toggle('icon-rotate');
             }
         });
     }

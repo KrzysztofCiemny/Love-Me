@@ -46,9 +46,6 @@
         font-size: 20px;
         margin-left: 25px;
     }
-    .hero {
-        margin-top: 15vh;
-    }
     .hero h1 {
         font-size: 95px;
     }
@@ -57,7 +54,6 @@
     }
     .hero i {
         font-size: 20px;
-        margin-top: 13vh;
     }
 }
 @media (min-width: 768px) {
@@ -78,5 +74,11 @@
     }
     .hero i {
         margin-top: 13vh;
+    }
+}
+@media (min-width: 1200px) {
+    #heroView {
+       /* background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); */
+       background: linear-gradient(110deg, #17181c 30%, rgb(255, 250, 253) 30%);
     }
 }
