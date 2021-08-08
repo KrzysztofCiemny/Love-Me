@@ -24,7 +24,6 @@
 }
 .telAndSocials ul {
     margin-top: 15px;
-    /* align-self: flex-start; */
 }
 .telLink,
 .socialLink {
@@ -133,5 +132,14 @@
     }
     .telLink {
         margin: 0;
+    }
+    .telAndSocials ul {
+        margin-top: 0;
+    }
+    .socialLink a {
+        min-width: 175px;
+    }
+    .socialLink p {
+        font-size: 1.1rem;
     }
 }
