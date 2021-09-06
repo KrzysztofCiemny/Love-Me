@@ -49,3 +49,16 @@
         height: 420px;
     }
 }
+@media (min-width: 1200px) {
+    .aboutPerson h2 {
+        font-size: 1.7rem;
+    }
+}
+@media (min-width: 1400px) {
+    .AboutUs-Container {
+        padding: 60px 7% 0 7%;
+    }
+    .aboutPerson img {
+        height: 600px;
+    }
+}

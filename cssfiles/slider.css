@@ -41,17 +41,17 @@
         margin: 85px 0 45px 0;
     }
     .slides {
-        height: 65vw;
+        height: 50vh;
     }
 }
 @media (min-width: 992px) {
     .slides {
-        height: 50vw;
+        height: 70vh;
     }
 }
 @media (min-width: 1200px) {
     .slides {
-        max-height: 100vh;
+        height: 80vh;
     }
     #prevBtn,
     #nextBtn {
