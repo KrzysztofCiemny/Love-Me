@@ -77,6 +77,9 @@
     margin: 10px 0 10px 0;
     color: gray;
 }
+.servicesImg {
+    display: none;
+}
 
 @media (min-width: 576px) {
     .servicesContainer h4 {
@@ -99,7 +102,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 70px;
+        padding-top: 50px;
     }
     .servicesWidth {
         width: 70%;
@@ -118,5 +121,32 @@
     }
     .servicesDropDown:hover {
         color: red;
+    }
+    .servicesContainer {
+        position: relative;
+        min-height: 600px;
+    }
+    .servicesContainer h2 {
+        margin-bottom: 5vh;
+    }
+    .servicesWidth {
+        align-self: flex-start;
+        width: 45%;
+        margin-left: 10vw;
+    }
+    .servicesNote {
+        display: block;
+        position: absolute;
+        top: 330px;
+        right: 10vw;
+        width: 300px;
+    }
+    .servicesNote-position {
+        position: relative;
+    }
+    .servicesNote-position p {
+        position: absolute;
+        text-indent: 50px;
+        z-index: 10;
     }
 }

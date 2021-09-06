@@ -1,6 +1,6 @@
 .footer {
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@
     }
 }
 .scrollUp i {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 .footer p {
