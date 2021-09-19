@@ -35,19 +35,15 @@
         justify-content: space-between;
     }
     .aboutPerson img {
-        height: 390px;
-    }
-    .aboutPerson img {
         width: 94%;
+        height: 55vw;
     }
     .aboutPerson p {
         width: 94%;
     }
 }
 @media (min-width: 992px) {
-    .aboutPerson img {
-        height: 420px;
-    }
+
 }
 @media (min-width: 1200px) {
     .aboutPerson h2 {
