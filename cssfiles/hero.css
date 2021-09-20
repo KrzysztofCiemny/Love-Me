@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.header h1 {
+.logo {
     color: red;
     font: 25px 'Dancing Script', cursive;
     display: inline-block;
@@ -41,7 +41,7 @@
         justify-content: space-between;
         align-items: center;
     }
-    .header h1 {
+    .logo {
         margin-left: 25px;
     }
     .hero h1 {
@@ -77,7 +77,7 @@
     .header {
         min-height: 70px;
     }
-    .header h1 {
+    .logo {
         position: fixed;
         z-index: 50;
         top: 20px;
