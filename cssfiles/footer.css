@@ -1,12 +1,12 @@
 .footer {
-    width: 100vw;
+    margin: auto;
+    max-width: 1160px;
     height: 40vh;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: #17181c;
 }
 .footer h1 {
     color: red;

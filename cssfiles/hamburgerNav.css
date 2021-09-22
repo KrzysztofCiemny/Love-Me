@@ -247,3 +247,15 @@
         margin: 0 10px 0 10px;
     }
 }
+@media (min-width: 1400px) {
+    .nav_list {
+        padding-right: 15vw;
+    }
+    .nav_item {
+        font-size: 1.3rem;
+    }
+    .nav_socials_1200px {
+        font-size: 19px;
+        margin-left: 12vw;
+    }
+}

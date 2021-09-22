@@ -35,6 +35,10 @@
 }
 
 @media (min-width: 576px) {
+    .heroView {
+        background: url("../images/hero2.jpg") no-repeat fixed center 100%;
+        background-size: cover;
+    }
     .header {
         position: unset;
         display: flex;
@@ -70,10 +74,6 @@
     }
 }
 @media (min-width: 1200px) {
-    .heroView {
-        background: url("../images/hero2.jpg") no-repeat fixed 100%;
-        background-size: cover;
-    }
     .header {
         min-height: 70px;
     }
@@ -87,7 +87,26 @@
     .hero {
         margin-top: 25vh;
     }
+    .hero h1 {
+        font-size: 140px;
+    }
     .hero i {
         margin-top: 0;
+    }
+}
+@media (min-width: 1400px) {
+    .hero {
+        margin-top: 15vh;
+    }
+    .logo {
+        top: 22px;
+        left: 22px;
+    }
+    .hero h1 {
+        font-size: 170px;
+        letter-spacing: 4px;
+    }
+    .hero-p {
+        font-size: 30px;
     }
 }

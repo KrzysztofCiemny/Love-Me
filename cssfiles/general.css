@@ -27,6 +27,9 @@ p {
 a {
     text-decoration: none;
 }
+.dark-background {
+    background-color: #17181c;
+}
 
 @media (min-width: 576px) {
     body {
@@ -52,6 +55,5 @@ a {
     h2 {
         font-size: 2rem;
         letter-spacing: 1.5px;
-
     }
 }
