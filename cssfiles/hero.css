@@ -1,5 +1,6 @@
 .heroView {
     min-height: 100vh;
+    overflow: hidden;
 }
 .header {
     display: flex;
@@ -24,14 +25,32 @@
     font: 100px 'Dancing Script', cursive;
     z-index: 1;
     margin: 0;
+    animation: heroReveal 0.5s forwards ease-in-out;
 }
 .hero-p {
     font: 25px 'Sorts Mill Goudy', serif;
     letter-spacing: 1px;
     padding-bottom: 10px;
+    animation: heroReveal 0.5s 0.2s forwards ease-in-out;
 }
 .hero i {
     margin-top: 15vh;
+    transform: scale(10);
+    animation: scaleUpIcon 0.7s forwards ease-in-out;
+}
+@keyframes scaleUpIcon {
+    to {
+        transform: scale(1);
+    }
+}
+.hero h1,
+.hero-p {
+    transform: translateY(100vh);
+}
+@keyframes heroReveal {
+ to {
+    transform: translateY(0);
+ }
 }
 
 @media (min-width: 576px) {
