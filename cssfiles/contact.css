@@ -3,6 +3,7 @@
     max-width: 1160px;
     padding: 0px 25px 55px 25px;
     margin: auto;
+    overflow: hidden;
 }
 .contactContainer h2 {
     padding: 50px 0 30px 0;
@@ -29,6 +30,8 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+    transform: translateY(100%);
+    opacity: 0;
 }
 .telLink {
     margin: 25px 0 25px 0;
@@ -51,6 +54,16 @@
 }
 .socialName {
     font-weight: 600;
+    transform: translateX(-100vw);
+}
+.address-anim {
+    transform: translateX(-100vw);
+}
+@keyframes contactTranslate {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .telLink p {
     font-size: 1.1rem;

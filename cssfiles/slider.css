@@ -4,6 +4,12 @@
     overflow: hidden;
     position: relative;
     border-bottom: 1px solid #fff;
+    transform: scale(0);
+}
+@keyframes sliderScale {
+    to {
+        transform: scale(1);
+    }
 }
 .slider-background {
     background: linear-gradient(rgb(255, 250, 253), #17181c);
