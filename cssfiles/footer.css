@@ -8,18 +8,28 @@
     align-items: center;
     justify-content: space-around;
 }
-.footer h1 {
+.footer-h {
     color: red;
     font: 2.1rem 'Dancing Script', cursive;
     margin: 0;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.footSocials {
+    padding-bottom: 40px;
+    transform: translateY(100%);
+    opacity: 0;
+}
+@keyframes footerAnimation {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .scrollUp,
 .footSocials a {
     color: #fff;
     margin: 0 5px 0 5px;
-}
-.footSocials {
-    padding-bottom: 40px;
 }
 .scrollUp {
     display: flex;
