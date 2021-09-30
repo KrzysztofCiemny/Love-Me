@@ -30,6 +30,9 @@ a {
 .dark-background {
     background-color: #17181c;
 }
+.overflow {
+    overflow: hidden;
+}
 
 @media (min-width: 576px) {
     body {

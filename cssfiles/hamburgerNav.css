@@ -118,6 +118,33 @@
     display: none;
 }
 
+.nav-item1,
+.nav-item2,
+.nav-item3,
+.nav-item4 {
+    opacity: 0;
+    transform: translate(-100%, 100%);
+}
+.nav-item1 {
+    animation: navigationAnimation 0.7s forwards ease-in-out;
+}
+.nav-item2{
+    animation: navigationAnimation 0.7s 0.1s forwards ease-in-out;
+}
+.nav-item3{
+    animation: navigationAnimation 0.7s 0.2s forwards ease-in-out;
+}
+.nav-item4 {
+    animation: navigationAnimation 0.7s 0.3s forwards ease-in-out;
+}
+
+@keyframes navigationAnimation {
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
 @media (min-width: 576px) {
     .hamburger {
         display: none;
