@@ -36,18 +36,7 @@
     flex-direction: column;
     justify-content: center;
     height: 50px;
-    animation:infinite arrowMove 2s ease-in-out;
-}
-@keyframes arrowMove {
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(8px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
+    animation: infinite arrowMove 2s ease-in-out;
 }
 .scrollUp i {
     font-size: 1.5rem;

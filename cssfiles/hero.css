@@ -1,6 +1,9 @@
 .heroView {
     min-height: 100vh;
     overflow: hidden;
+    background: url("../images/loveme.png") no-repeat fixed center;
+    background-color: #17181c;
+    position: relative;
 }
 .header {
     display: flex;
@@ -8,49 +11,48 @@
     align-items: center;
 }
 .logo {
-    color: red;
-    font: 25px 'Dancing Script', cursive;
+    color: #fff;
+    font: 20px 'Ephesis', cursive;
     display: inline-block;
     margin-left: 25px;
 }
-.hero {
-    margin-top: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.hero h1 {
-    color: red;
-    font: 100px 'Dancing Script', cursive;
+.hero-h {
+    color: #fff;
+    font: 120px 'Lato', sans-serif;
+    letter-spacing: 10px;
+    font-weight: 900;
     z-index: 1;
     margin: 0;
     animation: heroReveal 0.5s forwards ease-in-out;
+    text-align: center;
 }
-.hero-p {
-    font: 25px 'Sorts Mill Goudy', serif;
-    letter-spacing: 1px;
-    padding-bottom: 10px;
-    animation: heroReveal 0.5s 0.2s forwards ease-in-out;
+.hero-div {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.hero i {
-    margin-top: 15vh;
-    transform: scale(10);
-    animation: scaleUpIcon 0.7s forwards ease-in-out;
+.scrollDown {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    animation: infinite arrowMove 2s ease-in-out;
 }
-@keyframes scaleUpIcon {
-    to {
-        transform: scale(1);
+@keyframes arrowMove {
+    0%{
+        transform: translateY(0);
     }
-}
-.hero h1,
-.hero-p {
-    transform: translateY(100vh);
-}
-@keyframes heroReveal {
- to {
-    transform: translateY(0);
- }
+    50%{
+        transform: translateY(8px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 @media (min-width: 576px) {
