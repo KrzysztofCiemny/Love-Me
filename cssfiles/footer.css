@@ -1,7 +1,7 @@
 .footer {
     margin: auto;
     max-width: 1160px;
-    height: 40vh;
+    height: 50vh;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -9,16 +9,21 @@
     justify-content: space-around;
 }
 .footer-h {
-    color: red;
-    font: 2.1rem 'Dancing Script', cursive;
+    color: #fff;
+    font: 2.1rem 'Ephesis', cursive;
     margin: 0;
-    transform: translateY(100%);
-    opacity: 0;
 }
 .footSocials {
     padding-bottom: 40px;
-    transform: translateY(100%);
-    opacity: 0;
+}
+.foot-fb {
+    color: #3b5998;
+}
+.foot-inst {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @keyframes footerAnimation {
     to {
@@ -51,11 +56,8 @@
 }
 
 @media (min-width: 576px) {
-    .footer h1 {
-        font: 2.3rem 'Dancing Script', cursive;
-    }
     .footSocials {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .footer p small {
         font-size: .6rem;

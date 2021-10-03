@@ -31,9 +31,7 @@
 .telLink {
     margin: 0 0 25px 0;
 }
-.telLink a {
-    min-width: 250px;
-}
+.telLink a,
 .socialLink a {
     min-width: 250px;
 }
@@ -102,28 +100,21 @@
 .address-anim {
     transform: translateX(100vw);
 } */
-@keyframes contactTranslate {
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 
 @media (min-width: 576px) {
-    .contactContainer h2 {
-        padding: 75px 0 85px 0;
-    }
-    .address {
-        display: flex;
-        justify-content: space-around;
-    }
-    .address h4 {
-        margin: 0 0 10px 0;
+    .contact-p {
         font-size: 1.1rem;
     }
-    .address p {
-        margin-bottom: 30px;
-        font-size: 1.1rem;
+    .address-p {
+        font-size: 1.7rem;
+    }
+    .telLink p,
+    .socialLink p {
+        font-size: 1.3rem;
+    }
+    .telLink a,
+    .socialLink a {
+        min-width: 300px;
     }
 }
 @media (min-width: 768px) {

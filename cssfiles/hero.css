@@ -1,7 +1,7 @@
 .heroView {
     min-height: 100vh;
     overflow: hidden;
-    background: url("../images/loveme.png") no-repeat fixed center;
+    background: url("../images/loveme.png") no-repeat fixed 50% 60%;
     background-color: var(--dark);
     position: relative;
 }
@@ -57,26 +57,13 @@
 
 @media (min-width: 576px) {
     .heroView {
-        background: url("../images/hero2.jpg") no-repeat fixed center 100%;
-        background-size: cover;
+        background-position: 50% 65%;
     }
     .header {
         position: unset;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-    }
-    .logo {
-        margin-left: 25px;
-    }
-    .hero h1 {
-        font-size: 95px;
-    }
-    .hero-p {
-        font-size: 27px;
-    }
-    .hero i {
-        font-size: 20px;
     }
 }
 @media (min-width: 992px) {

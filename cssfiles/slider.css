@@ -37,7 +37,9 @@
 }
 
 @media (min-width: 576px) {
-
+    .slider-container {
+        margin: 70px 0 70px 0;
+    }
 }
 @media (min-width: 768px) {
     #prevBtn,

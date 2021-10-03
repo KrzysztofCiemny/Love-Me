@@ -72,6 +72,12 @@
     .AboutUs-Container {
         padding: 20px 27px 0 27px;
     }
+    .aboutUs-p  {
+        font-size: 1.5rem;
+    }
+    .aboutPerson p {
+        font-size: 1.2rem;
+    }
 }
 @media (min-width: 768px) {
     .person-container {
