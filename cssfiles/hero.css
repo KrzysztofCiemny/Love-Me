@@ -2,7 +2,7 @@
     min-height: 100vh;
     overflow: hidden;
     background: url("../images/loveme.png") no-repeat fixed center;
-    background-color: #17181c;
+    background-color: var(--dark);
     position: relative;
 }
 .header {

@@ -1,11 +1,15 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+:root {
+    --dark: #17181c;
+}
 body {
     padding: 0;
     margin: 0;
-    font: 400 20px 'Open Sans', sans-serif;
-    background-color: rgb(255, 250, 253);
+    font: 400 20px 'Lato', sans-serif;
+    background-color: var(--dark);
+    color: #fff;
 }
 ul {
     list-style-type: none;
@@ -13,8 +17,8 @@ ul {
     padding: 0;
 }
 h2 {
-    font-family: 'Sorts Mill Goudy', serif;
-    font-size: 1.7rem;
+    font-family: 'Ephesis', cursive;
+    font-size: 2rem;
     letter-spacing: 1.5px;
     text-align: center;
 }
@@ -28,7 +32,7 @@ a {
     text-decoration: none;
 }
 .dark-background {
-    background-color: #17181c;
+    background-color: var(--dark);
 }
 .overflow {
     overflow: hidden;
