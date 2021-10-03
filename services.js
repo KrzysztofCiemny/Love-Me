@@ -1,6 +1,6 @@
 const services = document.querySelectorAll('.services');
 const serviceLinks = document.querySelectorAll('.servicesDropDown');
-const icons = document.querySelectorAll('.icon-down-open-mini');
+const icons = document.querySelectorAll('.icon-down-open');
 
 const dropDownServices = () => {
     serviceLinks.forEach(link => link.addEventListener('click', dropDown));

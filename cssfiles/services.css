@@ -1,20 +1,23 @@
 .servicesContainer {
-    padding: 50px 21px 70px 21px;
+    padding: 35px 21px 70px 21px;
     color: rgb(255, 250, 253);
     min-height: 400px;
     max-width: 1160px;
     margin: auto;
 }
-.servicesContainer h2 {
-    margin-bottom: 0;
+.services-header {
+    font-family: 'Ephesis', cursive;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    text-align: left;
+    font-weight: 400;
+}
+.services-header-span {
+    padding-right: 7px;
 }
 .servicesContainer ul {
     line-height: 2;
     margin-top: 55px;
-}
-.servicesContainer h4 {
-    font-weight: 700;
-    margin: 0;
 }
 .titleServices {
     border-bottom: 1px solid lightgray;
@@ -27,20 +30,16 @@
     align-items: center;
     cursor: pointer;
 }
-.servicesDropDown {
-    transition: color .2s ease-in-out;
-}
-.servicesDropDown:hover {
-    color: red;
-}
-.icon-down-open-mini {
+.icon-down-open {
     display: inline-block;
-    color: rgb(255, 250, 253);
-    font-size: 30px;
-    transition: transform .4s .1s ease-in-out;
-    transform: translateX(100vw);
+    color: #fff;
+    font-size: 1.2rem;
+    transition: transform .4s .1s ease;
 }
 .services-h {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
     transform: translateX(-100vw);
 }
 @keyframes servicesTranslate {
@@ -60,7 +59,7 @@
     overflow: hidden;
 }
 .services-active {
-    max-height: 1000px;
+    max-height: 2000px;
 }
 .services ul {
     margin: 0;
@@ -84,12 +83,12 @@
 .eachService-p {
     text-align: left;
     line-height: 1.1;
-    font-size: 0.95rem;
-    font-weight: 600;
+    font-size: .5rem;
+    font-weight: 400;
 }
 .serviceTime p{
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     margin: 10px 0 10px 0;
     color: gray;
 }
