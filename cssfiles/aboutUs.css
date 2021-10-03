@@ -80,9 +80,22 @@
     }
 }
 @media (min-width: 768px) {
+    .aboutUs {
+        margin-top: 70px;
+    }
+    .aboutUs-p  {
+        font-size: 1.7rem;
+        margin-bottom: 70px;
+    }
     .person-container {
         display: flex;
         justify-content: space-between;
+    }
+    .aboutPerson {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.705);
+    }
+    .aboutPerson h2 {
+        margin-top: 70px;
     }
     .aboutPerson img {
         width: 94%;
@@ -91,6 +104,7 @@
     }
     .aboutPerson p {
         width: 94%;
+        margin-bottom: 70px;
     }
 }
 @media (min-width: 992px) {

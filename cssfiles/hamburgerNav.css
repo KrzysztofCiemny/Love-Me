@@ -231,34 +231,8 @@
     }
 }
 @media (min-width: 768px) {
-    .nav_list {
-        min-width: 400px;
-        padding: 0 70px 0 0;
-    }
-    .nav_socials {
-        display: flex;
-        margin: 0 20px 0 0;
-        font-size: 15px;
-    }
-    .nav_fb {
-        display: block;
-        color: #1a1a1a;
-        transform: unset;
-        transition: unset;
-    }
-    .nav_ig {
-        display: block;
-        color: #1a1a1a;
-        background: unset;
-        -webkit-background-clip: unset;
-        background-clip: unset;
-        -webkit-text-fill-color: unset;
-
-        transform: unset;
-        transition: unset;
-    }
-    .nav_socials a {
-        margin: 0 7px 0 7px;
+    .nav_list a {
+        font-size: 1.6rem;
     }
 }
 @media (min-width: 1200px) {

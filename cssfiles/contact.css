@@ -118,32 +118,8 @@
     }
 }
 @media (min-width: 768px) {
-    .contact {
-        display: flex;
-        justify-content: space-around;
-    }
-    .address {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .telAndSocials {
-        padding-top: 0;
-        align-items: flex-end;
-    }
-    .telLink {
-        margin: 0;
-    }
-    .telAndSocials ul {
-        margin-top: 0;
-    }
-    .socialLink a,
-    .telLink a {
-        min-width: 200px;
-    }
-    .socialLink p,
-    .telLink p {
-        font-size: 0.9rem;
+    .contact-p {
+        letter-spacing: 2px;
     }
 }
 @media (min-width: 1200px) {

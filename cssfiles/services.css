@@ -113,11 +113,14 @@
     }
 }
 @media (min-width: 768px) {
+    .services-header {
+        font-size: 2.5rem;
+    }
+    .services-header-span {
+        padding-right: 15px;
+    }
     .servicesWidth {
         margin: 0 5vw 0 5vw;
-    }
-    .servicesContainer h4 {
-        font-size: 18px;
     }
     .titleServices {
         padding: 0 14px 0 19px;
