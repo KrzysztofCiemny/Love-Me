@@ -40,7 +40,7 @@
     font-size: 1.2rem;
     font-weight: 400;
     margin: 0;
-    transform: translateX(-100vw);
+    /* transform: translateX(-100vw); */
 }
 @keyframes servicesTranslate {
     to {
