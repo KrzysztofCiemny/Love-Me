@@ -100,6 +100,11 @@
 .address-anim {
     transform: translateX(100vw);
 } */
+.address-icon,
+.contact-icon,
+.br {
+    display: none;
+}
 
 @media (min-width: 576px) {
     .contact-p {
@@ -122,42 +127,51 @@
         letter-spacing: 2px;
     }
 }
-@media (min-width: 1200px) {
-    .contact {
+@media (min-width: 992px) {
+    .contactContainer {
+        max-width: 850px;
+    }
+    .contact-span {
+        padding-left: 100px;
+    }
+    .address-name {
         display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-    }
-    .contact-line {
-        width: 700px;
-        border-top: 1px solid #fff;
-        align-self: center;
-        margin: 70px 0 70px 0;
-    }
-    .t {
-        text-indent: 50px;
-    }
-    .address {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .address div {
-        margin: 0 50px 0 50px;
-    }
-    .address-p {
-        padding-left: 20px;
-    }
-    .telAndSocials {
+        justify-content: space-around;
         align-items: center;
     }
-    .telLink a,
-    .socialLink a {
-        min-width: 350px;
+    .address-p {
+        margin-top: 100px;
+    }
+    .center {
+        text-align: center;
+        margin: 100px 0 50px 0;
+    }
+    .center-social {
+        text-align: center;
+        margin: 50px 0 50px 0;
+    }
+    .contact-icon {
+        padding-right: 20px;
+    }
+    .address-icon,
+    .contact-icon,
+    .br { 
+        display: unset;
+    }
+}
+@media (min-width: 1200px) {
+    .contactContainer {
+        max-width: 1050px;
+    }
+    .contact-p {
+        font-size: 1.3rem;
+    }
+    .address-p {
+        font-size: 1.9rem;
     }
     .telLink p,
     .socialLink p {
-        font-size: 0.95rem;
+        font-size: 1.3rem;
     }
 }
 @media (min-width: 1400px) {

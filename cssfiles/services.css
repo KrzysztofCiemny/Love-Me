@@ -1,16 +1,9 @@
 .servicesContainer {
-    padding: 35px 21px 100px 21px;
+    padding: 0 21px 100px 21px;
     color: rgb(255, 250, 253);
     min-height: 400px;
     max-width: 1160px;
     margin: auto;
-}
-.services-header {
-    font-family: 'Ephesis', cursive;
-    font-size: 2rem;
-    letter-spacing: 1.5px;
-    text-align: left;
-    font-weight: 400;
 }
 .services-header-span {
     padding-right: 7px;
@@ -131,7 +124,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 50px;
+        padding-top: 10px;
     }
     .servicesWidth {
         width: 70%;
@@ -143,14 +136,30 @@
         padding: 10px 0 10px 0;
         border-bottom: 1px solid lightgray;
     }
+    .services-header {
+        margin-left: 70px;
+    }
 }
 @media (min-width: 1200px) {
     .servicesContainer {
         position: relative;
         min-height: 600px;
+        padding-bottom: 150px;
     }
-    .servicesContainer h2 {
-        margin-bottom: 5vh;
+    .services-header {
+        margin-left: 120px;
+    }
+    .icon-down-open {
+        font-size: 1.5rem;
+    }
+    .services-h {
+        font-size: 1.5rem;
+    }
+    .eachService p {
+        font-size: 1.1rem;
+    }
+    .eachService-p {
+        font-size: .7rem;
     }
 }
 @media (min-width: 1400px) {

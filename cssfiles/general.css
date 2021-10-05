@@ -35,6 +35,9 @@ a {
 .dark-background {
     background-color: var(--dark);
 }
+.light-background {
+    background-color: #f0f0f0;
+}
 .overflow {
     overflow: hidden;
 }

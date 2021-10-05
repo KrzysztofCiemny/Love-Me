@@ -73,57 +73,25 @@
     .hero-h-me {
         display: unset;
     }
+    .heroView {
+        background-position: 50% 65%;
+    }
 }
-
 @media (min-width: 992px) {
-    .hero {
-        margin-top: 15vh;
+    .hero-h {
+        font-size: 150px;
+        letter-spacing: 10px;
     }
-    .hero h1 {
-        font-size: 100px;
-        letter-spacing: 4px;
-    }
-    .hero-p {
-        font-size: 27px;
-    }
-    .hero i {
-        margin-top: 13vh;
+    .heroView {
+        background-position: 50% 70%;
     }
 }
 @media (min-width: 1200px) {
-    .header {
-        min-height: 70px;
-    }
-    .logo {
-        position: fixed;
-        z-index: 50;
-        top: 20px;
-        left: 20px;
-        margin: 0;
-    }
-    .hero {
-        margin-top: 25vh;
-    }
-    .hero h1 {
-        font-size: 140px;
-    }
-    .hero i {
-        margin-top: 0;
+    .hero-h {
+        font-size: 180px;
+        letter-spacing: 12px;
     }
 }
 @media (min-width: 1400px) {
-    .hero {
-        margin-top: 15vh;
-    }
-    .logo {
-        top: 22px;
-        left: 22px;
-    }
-    .hero h1 {
-        font-size: 170px;
-        letter-spacing: 4px;
-    }
-    .hero-p {
-        font-size: 30px;
-    }
+
 }
