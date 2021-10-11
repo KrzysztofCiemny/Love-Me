@@ -20,16 +20,29 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
-.images {
+.show-images {
     display: flex;
     flex-direction: column;
     width: 100%;
+    display: none;
+    /* transition: all .4s .1s ease; */
+}
+.images-active {
+    display: flex;
 }
 .images img {
     width: 100%;
     padding-bottom: 10px;
     border-radius: 5px;
+}
+.show-more,
+.show-less {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 15px 0 25px 0;
+    cursor: pointer;
 }
 
 @media (min-width: 576px) {

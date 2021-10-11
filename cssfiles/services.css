@@ -5,6 +5,9 @@
     max-width: 1160px;
     margin: auto;
 }
+.services-header {
+    padding-bottom: 0;
+}
 .services-header-span {
     padding-right: 7px;
 }
