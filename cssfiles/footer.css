@@ -63,6 +63,14 @@
         font-size: .6rem;
     }
 }
+@media (min-width: 1160px) {
+    .footer h1 {
+        font-size: 2.3rem;
+    }
+    .footSocials {
+        font-size: 1.2rem;
+    }
+}
 @media (min-width: 1400px) {
     .scrollUp i {
         font-size: 1.7rem;
@@ -70,10 +78,24 @@
     .footer h1 {
         font-size: 2.5rem;
     }
-    .footSocials {
-        font-size: 1.2rem;
-    }
     .footer p small {
         font-size: .65rem;
+    }
+}
+@media (min-width: 1700px) {
+    .scrollUp i {
+        font-size: 1.9rem;
+    }
+    .footer h1 {
+        font-size: 2.7rem;
+    }
+    .footSocials {
+        font-size: 1.5rem;
+    }
+    .footer p {
+        font-size: .9rem;
+    }
+    .footer p small {
+        font-size: 0.7rem;
     }
 }

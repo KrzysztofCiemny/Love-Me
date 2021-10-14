@@ -45,6 +45,7 @@
     justify-content: center;
     height: 50px;
     animation: infinite arrowMove 2s ease-in-out;
+    cursor: pointer;
 }
 @keyframes arrowMove {
     0%{
@@ -86,12 +87,21 @@
         background-position: 50% 70%;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1160px) and (min-height: 750px){
     .hero-h {
         font-size: 180px;
-        letter-spacing: 12px;
+        letter-spacing: 15px;
     }
 }
-@media (min-width: 1400px) {
-
+@media (min-width: 1400px) and (min-height: 850px){
+    .hero-h {
+        font-size: 220px;
+        letter-spacing: 18px;
+    }
+}
+@media (min-width: 1900px){
+    .hero-h {
+        font-size: 260px;
+        letter-spacing: 25px;
+    }
 }

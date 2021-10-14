@@ -143,7 +143,7 @@
         margin-left: 70px;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1160px) {
     .servicesContainer {
         position: relative;
         min-height: 600px;
@@ -152,27 +152,40 @@
     .services-header {
         margin-left: 120px;
     }
+    .services-h,
     .icon-down-open {
         font-size: 1.5rem;
     }
-    .services-h {
-        font-size: 1.5rem;
-    }
     .eachService p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .eachService-p {
-        font-size: .7rem;
+        font-size: .8rem;
     }
 }
 @media (min-width: 1400px) {
-    .servicesContainer h4 {
-        font-size: 20px;
+    .services-header {
+        margin-left: 170px;
+    }
+}
+@media (min-width: 1700px) {
+    .services-header {
+        font-size: 3rem;
+        padding-top: 80px;
+    }
+    .servicesContainer {
+        min-height: 700px;
+        padding: 50px 0 200px 0;
+        max-width: 1400px;
+    }
+    .services-h,
+    .icon-down-open {
+        font-size: 1.8rem;
     }
     .eachService p {
-        font-size: 1.05rem;
+        font-size: 1.4rem;
     }
-    .serviceTime p{
-        font-size: 0.9rem;
+    .serviceTime p {
+        font-size: 1rem;
     }
 }

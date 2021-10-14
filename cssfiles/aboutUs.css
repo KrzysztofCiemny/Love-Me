@@ -15,9 +15,6 @@
     text-align: center;
     line-height: 1.4;
     text-transform: uppercase;
-    /* margin: 0 0 50px 0; */
-    /* transform: translateY(100%); */
-    /* opacity: 0; */
     color: #fff;
 }
 .person1 {
@@ -85,6 +82,7 @@
     .aboutUs {
         margin-top: 70px;
         padding-bottom: 70px;
+        /* border: unset; */
     }
     .aboutUs-p  {
         font-size: 1.7rem;
@@ -94,7 +92,7 @@
         justify-content: space-between;
     }
     .aboutPerson {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.705);
+        border-bottom: unset;
     }
     .aboutPerson h2 {
         margin-top: 70px;
@@ -117,6 +115,12 @@
     .aboutUs-p  {
         max-width: 700px;
     }
+    .aboutPerson p {
+        text-indent: 0px;
+    }
+}
+@media (min-width: 1160px) {
+
 }
 @media (min-width: 1200px) {
     .aboutPerson h2 {
@@ -138,5 +142,24 @@
 @media (min-width: 1400px) {
     .AboutUs-Container {
         padding: 60px 0 0 0;
+    }
+}
+@media (min-width: 1700px) {
+    .AboutUs-Container {
+        padding: 60px 0 0 0;
+        max-width: 1350px;
+    }
+    .aboutUs-p  {
+        max-width: 850px;
+        font-size: 2rem;
+    }
+    .aboutPerson h2 {
+        font-size: 2.5rem;
+    }
+    .aboutPerson img {
+        height: 670px;
+    }
+    .aboutPerson p {
+        font-size: 1.4rem;
     }
 }

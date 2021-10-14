@@ -175,26 +175,27 @@
     }
 }
 @media (min-width: 1400px) {
-    .address h4 {
-        margin: 0 0 20px 0;
-        font-size: 1.3rem;
-    }
-    .address p {
-        margin-bottom: 0;
-        font-size: 1.25rem;
-    }
     .telLink a,
     .socialLink a {
         min-width: 400px;
     }
+}
+@media (min-width: 1700px) {
+    .contactContainer {
+        max-width: 1450px;
+    }
+    .contact-p {
+        font-size: 1.7rem;
+    }
+    .address-p {
+        font-size: 2.2rem;
+    }
     .telLink p,
     .socialLink p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
-    .contact-line {
-        width: 900px;
-        border-top: 1px solid #fff;
-        align-self: center;
-        margin: 80px 0 80px 0;
+    .telLink a,
+    .socialLink a {
+        min-width: 500px;
     }
 }

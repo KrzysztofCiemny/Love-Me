@@ -1,59 +1,32 @@
-const slides = document.querySelector('.slides');
-const slidesImages = document.querySelectorAll('.slides img');
+const showMore = document.querySelector('.show-more');
+const images = document.querySelectorAll('.show-images');
+const showLess = document.querySelector('.show-less');
 
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
+const dropDownGallery = () => {
+    showMore.addEventListener('click', showMoreImages);
+    let howManyTimesClicked = 0;
 
-let imageCounter = 1;
-const imageWidth = slidesImages[0].getBoundingClientRect().width;
+    function showMoreImages() {
+        if(howManyTimesClicked === 0) images[0].classList.add('images-active');
+        if(howManyTimesClicked === 1) {
+            images[1].classList.add('images-active');
+            showMore.style.display = 'none';
+            showLess.style.display = 'flex';
+        }
 
-let autoSlideTimer = setInterval(autoSlide, 6000);
-
-function slider() {
-    slides.style.transform = 'translateX(' +(-imageWidth * imageCounter) + 'px)';
-
-    slides.addEventListener('transitionend', jumpToFirstImage);
-    nextBtn.addEventListener('click', goToNextSlide);
-    prevBtn.addEventListener('click', goToPrevSlide);
-}
-
-function autoSlide() {
-    if(imageCounter >= slidesImages.length -1) return;
-    slides.style.transition = "transform 0.5s ease-in-out";
-    imageCounter++;
-    slides.style.transform = 'translateX(' +(-imageWidth * imageCounter) + 'px)';
-}
-function resetAutoSlideTimer() {
-    clearInterval(autoSlideTimer);
-    autoSlideTimer = setInterval(autoSlide, 6000);
-}
-
-function jumpToFirstImage() {
-    if(slidesImages[imageCounter].id === 'lastClone') {
-        slides.style.transition = "none";
-        imageCounter = slidesImages.length - 2;
-        slides.style.transform = 'translateX(' +(-imageWidth * imageCounter) + 'px)';
+        howManyTimesClicked++;
+        if(howManyTimesClicked > 1) howManyTimesClicked = 0;
     }
-    if(slidesImages[imageCounter].id === 'firstClone') {
-        slides.style.transition = "none";
-        imageCounter = slidesImages.length - imageCounter;
-        slides.style.transform = 'translateX(' +(-imageWidth * imageCounter) + 'px)';
+
+    showLess.addEventListener('click', showLessImages);
+    function showLessImages() {
+        images.forEach(image => {
+            image.classList.remove('images-active');
+        });
+        showLess.style.display = 'none';
+        showMore.style.display = 'flex';
     }
 }
-function goToNextSlide() {
-    resetAutoSlideTimer()
-    if(imageCounter >= slidesImages.length -1) return;
-    slides.style.transition = "transform 0.5s ease-in-out";
-    imageCounter++;
-    slides.style.transform = 'translateX(' +(-imageWidth * imageCounter) + 'px)';
-}
-function goToPrevSlide() {
-    resetAutoSlideTimer()
-    if(imageCounter <= 0) return;
-    slides.style.transition = "transform 0.5s ease-in-out";
-    imageCounter--;
-    slides.style.transform = 'translateX(' +(-imageWidth * imageCounter) + 'px)';
-}
 
-export default slider;
+export default dropDownGallery;
 

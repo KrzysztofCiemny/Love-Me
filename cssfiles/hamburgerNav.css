@@ -260,22 +260,31 @@
     .logo {
         font-size: 23px;
     }
-    .navigation {
-        width: 35%;
-    }
     .nav_list a{
         font-size: 1.1rem;
     }
 }
 @media (min-width: 1400px) {
     .nav_list {
-        padding-right: 15vw;
+        padding-right: 8vw;
     }
-    .nav_item {
+    .nav_item a {
+        font-size: 1.1rem;
+    }
+}
+@media (min-width: 1700px) {
+    .nav_item a {
+        font-size: 1.2rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1900px) {
+    .nav_item a {
         font-size: 1.3rem;
     }
-    .nav_socials_1200px {
-        font-size: 19px;
-        margin-left: 12vw;
+    .logo {
+        font-size: 1.6rem;
     }
 }
