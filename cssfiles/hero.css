@@ -10,11 +10,9 @@
     justify-content: space-between;
     align-items: center;
 }
-.logo {
-    color: #fff;
-    font: 20px 'Ephesis', cursive;
-    display: inline-block;
-    margin-left: 25px;
+.hero-anim {
+    overflow: hidden;
+    position: relative;
 }
 .hero-h {
     color: #fff;
@@ -23,8 +21,31 @@
     font-weight: 900;
     z-index: 1;
     margin: 0;
-    animation: heroReveal 0.5s forwards ease-in-out;
     text-align: center;
+    transform: translateY(150%);
+    animation: heroTranslate 2s 3s forwards ease-out;
+}
+.hero-p {
+    text-align: center;
+    font: 1.6rem 'Ephesis', cursive;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(200%);
+    animation: heroTranslate 1.5s 0.5s forwards ease-out,
+               heroOpacity 1s 2.7s forwards ease-out;
+}
+@keyframes heroTranslate {
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes heroOpacity {
+    to {
+        opacity: 0;
+    }
 }
 .hero-h-me {
     display: none;
@@ -44,8 +65,10 @@
     flex-direction: column;
     justify-content: center;
     height: 50px;
-    animation: infinite arrowMove 2s ease-in-out;
+    animation: infinite arrowMove 2s ease-in-out,
+               heroAppear 0.7s 6s forwards ease-out;
     cursor: pointer;
+    opacity: 0;
 }
 @keyframes arrowMove {
     0%{
@@ -69,6 +92,9 @@
         justify-content: center;
         align-items: center;
     }
+    .hero-p {
+        font-size: 2rem;
+    }
 }
 @media (min-width: 768px) {
     .hero-h-me {
@@ -76,6 +102,9 @@
     }
     .heroView {
         background-position: 50% 65%;
+    }
+    .hero-p {
+        font-size: 2.2rem;
     }
 }
 @media (min-width: 992px) {
@@ -92,16 +121,25 @@
         font-size: 180px;
         letter-spacing: 15px;
     }
+    .hero-p {
+        font-size: 2.5rem;
+    }
 }
 @media (min-width: 1400px) and (min-height: 850px){
     .hero-h {
         font-size: 220px;
         letter-spacing: 18px;
     }
+    .hero-p {
+        font-size: 2.8rem;
+    }
 }
 @media (min-width: 1900px){
     .hero-h {
         font-size: 260px;
         letter-spacing: 25px;
+    }
+    .hero-p {
+        font-size: 3.2rem;
     }
 }
