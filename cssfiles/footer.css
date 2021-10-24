@@ -12,6 +12,7 @@
     color: #fff;
     font: 2.1rem 'Ephesis', cursive;
     margin: 0;
+    opacity: 0;
 }
 .footSocials {
     padding-bottom: 40px;

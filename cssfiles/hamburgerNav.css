@@ -6,7 +6,7 @@
     margin: 0;
     z-index: 3;
     opacity: 0;
-    animation: heroAppear 0.5s 5.8s forwards ease-out;
+    animation: heroAppear 0.5s 6s forwards ease-out;
 }
 .hamburger-box {
     width: 25px;
@@ -131,16 +131,16 @@
     transform: translate(-70%, 70%);
 }
 .nav-item1 {
-    animation: navigationAnimation 0.7s 5.8s forwards ease-in-out;
+    animation: translateAnimation 0.7s 5.8s forwards ease-in-out;
 }
 .nav-item2{
-    animation: navigationAnimation 0.7s 5.9s forwards ease-in-out;
+    animation: translateAnimation 0.7s 5.9s forwards ease-in-out;
 }
 .nav-item3{
-    animation: navigationAnimation 0.7s 6.1s forwards ease-in-out;
+    animation: translateAnimation 0.7s 6.1s forwards ease-in-out;
 }
 .nav-item4 {
-    animation: navigationAnimation 0.7s 6.3s forwards ease-in-out;
+    animation: translateAnimation 0.7s 6.3s forwards ease-in-out;
 }
 .logo {
     color: #fff;
@@ -155,7 +155,7 @@
         opacity: 1;
     }
 }
-@keyframes navigationAnimation {
+@keyframes translateAnimation {
     to {
         transform: translate(0);
         opacity: 1;
