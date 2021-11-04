@@ -7,9 +7,9 @@ const dropDownGallery = () => {
     let howManyTimesClicked = 0;
 
     function showMoreImages() {
-        if(howManyTimesClicked === 0) images[0].classList.add('images-active');
+        if(howManyTimesClicked === 0) images[0].style.animation = 'showMoreImages 2s .1s forwards ease';
         if(howManyTimesClicked === 1) {
-            images[1].classList.add('images-active');
+            images[1].style.animation = 'showMoreImages 2s .1s forwards ease';
             showMore.style.display = 'none';
             showLess.style.display = 'flex';
         }
@@ -21,7 +21,7 @@ const dropDownGallery = () => {
     showLess.addEventListener('click', showLessImages);
     function showLessImages() {
         images.forEach(image => {
-            image.classList.remove('images-active');
+            image.style.animationFillMode = 'backwards';
         });
         showLess.style.display = 'none';
         showMore.style.display = 'flex';

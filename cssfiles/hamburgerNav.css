@@ -283,7 +283,7 @@
         font-size: 23px;
     }
     .nav_list a{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 }
 @media (min-width: 1400px) {
@@ -291,6 +291,9 @@
         padding-right: 8vw;
     }
     .nav_item a {
+        font-size: 1.1rem;
+    }
+    .nav_list a{
         font-size: 1.1rem;
     }
 }
